@@ -1,8 +1,10 @@
 // muestra solo el boton seleccionado.
 $(document).ready(() =>{
+        $('#map').show();
+        $('#graficos').hide();
        $('#mostrarmap').click(function(){
         $('#map').show();
-        $('#grafico').hide();
+        $('#graficos').hide();
           });
     $('#mostrargraficos').click(function(){
         $('#map').hide();
