@@ -1,0 +1,13 @@
+Un mapa con todas las estaciones. 
+
+Que se puedan sacar datos.
+
+Una base de datos propia.
+
+Lo historico y lo que está .
+
+Pedir informacion el usuario .
+
+con phyton seria 
+
+
