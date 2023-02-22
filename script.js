@@ -1,14 +1,12 @@
 // muestra solo el boton seleccionado.
 $(document).ready(() =>{
-    $('#home').show();
-    $('#api1').hide();
-       $('#mostrarHome').click(function(){
-        $('#home').show();
-        $('#api1').hide();
+       $('#mostrarmap').click(function(){
+        $('#map').show();
+        $('#grafico').hide();
           });
-    $('#mostrarApi1').click(function(){
-        $('#api1').show();
-        $('#home').hide();
+    $('#mostrargraficos').click(function(){
+        $('#map').hide();
+        $('#graficos').show();
            });
     
 });
@@ -23,6 +21,20 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+const url = 'https://blockchain.info/ticker';
+$.ajax({
+  url: url,
+  type: 'GET',
+  dataType: 'json',
+  success: (data) => {
+    // console.log(data);
+    $('#graficos').text(data.USD.last + ' US$ ');
+  },
+  error: () => {
+    alert('Error vuelva a intentarlo mas tarde.');
+  }
+});
 
 
 
