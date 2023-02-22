@@ -1,7 +1,7 @@
 .left{
     float: left;
     background:#5A738E;
-    height: 710px;
+    height: 865px;
     width: 220px;
 }
 .botton{
@@ -70,4 +70,4 @@ h1{
 #nombre{
   margin-left: 50px;
 }
-#map { height: 710px; }
+#map { height: 865px; }
