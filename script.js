@@ -2,14 +2,22 @@
 $(document).ready(() =>{
         $('#map').show();
         $('#graficos').hide();
+        $('#contactos').hide();
        $('#mostrarmap').click(function(){
         $('#map').show();
         $('#graficos').hide();
+        $('#contactos').hide();
           });
     $('#mostrargraficos').click(function(){
         $('#map').hide();
         $('#graficos').show();
+        $('#contactos').hide();
            });
+    $('#mostrarcontactos').click(function(){
+        $('#map').hide();
+        $('#graficos').hide();
+        $('#contactos').show();
+               });
     
 });
 

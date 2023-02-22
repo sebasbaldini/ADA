@@ -1,22 +1,7 @@
-header{
-  font-family: sans-serif;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  font-size: 2rem;
-  padding: 0em;
-  margin: auto;
-  align-items: center;
-  width: auto;
-  background: red;
-  height: 41px;
-}
-
 .left{
     float: left;
-    background: black;
-    height: 600px;
+    background:#5A738E;
+    height: 710px;
     width: 220px;
 }
 .botton{
@@ -24,7 +9,7 @@ header{
     width: 205px;
     display: block;
     margin: 6px;
-    margin-top: 3vh;
+    margin-top: 6vh;
     padding: 11px 60px;
     background: #58D3F7;
     font-weight: 600;
@@ -42,6 +27,7 @@ header{
     color: white;
     background: red;
     font-size: 18px;
+    margin-top: 10px;
 }
 nav{
   float: right;
@@ -58,14 +44,7 @@ nav{
   width: auto;
   }
 footer{
-color: white;
-text-align: right;
-background: red;
-font-weight: 600;
-margin-top: auto;
-width:auto;
-height:23px;
-padding: 10px;
+
 }
 h1{
   text-align: left;
@@ -91,4 +70,4 @@ h1{
 #nombre{
   margin-left: 50px;
 }
-#map { height: 600px; }
+#map { height: 710px; }
