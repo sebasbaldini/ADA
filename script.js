@@ -25,19 +25,5 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-//api para bitcoin;
 
-const url = 'https://blockchain.info/ticker';
-$.ajax({
-  url: url,
-  type: 'GET',
-  dataType: 'json',
-  success: (data) => {
-    // console.log(data);
-    $('#bit').text(data.USD.last + ' US$ ');
-  },
-  error: () => {
-    alert('Error vuelva a intentarlo mas tarde.');
-  }
-});
 
